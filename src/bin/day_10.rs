@@ -3,7 +3,7 @@ use z3::{ast::Int, Optimize, SatResult};
 
 #[derive(Debug)]
 struct Machine {
-    target: Vec<usize>,
+    _target: Vec<usize>,
     buttons: Vec<Vec<usize>>,
     joltage: Vec<usize>,
 }
@@ -98,7 +98,7 @@ fn main() -> Result<(), reqwest::Error> {
                 .collect();
 
             Machine {
-                target,
+                _target: target,
                 buttons,
                 joltage,
             }
